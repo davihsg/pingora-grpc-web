@@ -1,0 +1,21 @@
+{
+  "name": "cloudfront",
+  "version": "1.0.0",
+  "main": "src/client.ts",
+  "scripts": {
+    "generate-grpc-web": "protoc -I=src/protos --js_out=import_style=commonjs:src/protos/generated --grpc-web_out=import_style=typescript,mode=grpcwebtext:src/protos/generated src/protos/*.proto",
+    "dev": "webpack serve --mode development --open"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "typescript": "^5.7.2",
+    "google-protobuf": "^3.21.4"
+  }
+}

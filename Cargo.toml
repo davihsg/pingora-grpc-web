@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "server",
+    "proxy",
+]
+
+[workspace.dependencies]
+prost-build = "0.12.1"
+tonic-build = "0.10.2"

@@ -1,0 +1,13 @@
+[package]
+name = "proxy"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "grpc_proxy"
+path = "src/main.rs"
+
+[dependencies]
+pingora = { version = "0.4.0", features = ["proxy", "openssl"] }
+http = "1.0.0"
+async-trait = "0.1"

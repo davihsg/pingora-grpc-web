@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gRPC-web Client</title>
+</head>
+<body>
+  <h1>gRPC-web Client</h1>
+
+  <div>
+    <label for="serverUrl">Enter Server URL:</label>
+    <input type="text" id="serverUrl" placeholder="http://your-grpc-server-url" style="width: 300px;" />
+    <button id="sendRequestButton">Send Request</button>
+  </div>
+
+  <div id="responseContainer">
+    <h2>Response</h2>
+    <pre id="response"></pre>
+  </div>
+
+  <script src="bundle.js"></script> <!-- Webpack output bundle -->
+</body>
+</html>
